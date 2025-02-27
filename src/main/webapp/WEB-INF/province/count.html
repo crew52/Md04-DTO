@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+</head>
+<body>
+
+<table border="1px">
+    <tr>Id</tr>
+    <tr>Name</tr>
+    <tr>Count</tr>
+    <tbody>
+    <tr th:each="p : ${pro_counts}">
+        <td th:text="${p.id}"></td>
+        <td th:text="${p.name}"></td>
+        <td th:text="${p.count}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
